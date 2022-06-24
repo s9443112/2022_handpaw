@@ -37,10 +37,11 @@ import Cards from "./IndexSections/Cards.js";
 import PlainCards from "./IndexSections/PlainCards.js";
 import JavaScript from "./IndexSections/JavaScript.js";
 import NucleoIcons from "./IndexSections/NucleoIcons.js";
-import HomeProduct from "./new_pages/HomeProduct/HomeProduct.js";
 
 
 import ColorNavbar from './new_pages/navbars/navbars'
+import "index.css"
+
 
 export default function Index() {
   const wrapper = React.useRef(null);
@@ -57,8 +58,7 @@ export default function Index() {
     <>
       <ColorNavbar />
       <div className="wrapper" ref={wrapper}>
-        {/* <IndexHeader /> */}
-        <HomeProduct />
+        <IndexHeader />
         <div className="main">
           <Basic />
           <Navbars />
